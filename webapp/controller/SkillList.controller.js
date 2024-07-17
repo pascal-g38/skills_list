@@ -18,6 +18,12 @@ sap.ui.define([
 			const ItemList = this.byId("skillList");
 			const BindingObject = ItemList.getBinding("items");
 			BindingObject.filter(FilterArray);
-		    }
+		    },
+
+            onSkillPress() {
+                const oRouter = this.getOwnerComponent().getRouter();
+                oRouter.navTo("detail");
+            }     
+
         });
 });

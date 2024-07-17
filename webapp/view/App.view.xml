@@ -4,21 +4,9 @@
    xmlns:mvc="sap.ui.core.mvc"
    displayBlock="true"
    >
-    <Shell>
-        <App class="myApp">
-            <pages>
-                <Page title="{i18n>homePageTitle}">
-                    <content>
-                        <Panel
-                            class="sapUiResponsiveMargin"
-                            width="auto">
-                            <content>
-                                <mvc:XMLView viewName="ui5.skills.view.SkillsList"/>
-                            </content>
-                        </Panel>
-                    </content>
-                </Page>
-            </pages>
-        </App>
-    </Shell>
+  <Shell>
+    <App
+    class="skillsApp"
+    id="app"/>
+  </Shell>
 </mvc:View>

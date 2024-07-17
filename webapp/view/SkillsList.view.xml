@@ -10,8 +10,8 @@
       items="{ 
             path : 'skill>/Skills',
                sorter : {
-                path : 'SkillArea',
-                group : true
+                        path : 'SkillArea',
+                        group : true
                         } 
             }"
    >
@@ -26,7 +26,12 @@
          </Toolbar>
       </headerToolbar>   
       <items>
-         <ObjectListItem title="{skill>SkillName}"/>
+         <ObjectListItem
+         title="{skill>SkillName}"
+         type="Navigation"
+         press=".onSkillPress" 
+         >
+         </ObjectListItem> 
       </items>
    </List>
 </mvc:View>

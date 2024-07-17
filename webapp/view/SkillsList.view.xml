@@ -7,7 +7,13 @@
       headerText="{i18n>skillListTitle}"
       class="sapUiResponsiveMargin"
       width="auto"
-      items="{skill>/Skills}"
+      items="{ 
+            path : 'skill>/Skills',
+               sorter : {
+                path : 'SkillArea',
+                group : true
+                        } 
+            }"
    >
       <headerToolbar>
          <Toolbar>
@@ -20,7 +26,7 @@
          </Toolbar>
       </headerToolbar>   
       <items>
-         <ObjectListItem title="{skill>SkillName} ; {skill>SkillArea}"/>
+         <ObjectListItem title="{skill>SkillName}"/>
       </items>
    </List>
 </mvc:View>

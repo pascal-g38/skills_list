@@ -1,0 +1,26 @@
+<mvc:View
+   xmlns="sap.m"
+   xmlns:mvc="sap.ui.core.mvc"
+   controllerName="ui5.skills.controller.SkillList">
+   <List
+      id="skillList"
+      headerText="{i18n>skillListTitle}"
+      class="sapUiResponsiveMargin"
+      width="auto"
+      items="{skill>/Skills}"
+   >
+      <headerToolbar>
+         <Toolbar>
+            <Title text="{i18n>skillListTitle}"/>
+            <ToolbarSpacer/>
+            <SearchField 
+               width="50%" 
+               liveChange=".onFilterSkills"
+               showSearchButton="false"/>
+         </Toolbar>
+      </headerToolbar>   
+      <items>
+         <ObjectListItem title="{skill>SkillName} ; {skill>SkillArea}"/>
+      </items>
+   </List>
+</mvc:View>

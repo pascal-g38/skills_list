@@ -8,7 +8,7 @@ sap.ui.define([
 	return Controller.extend("ui5.skills.controller.SkillList", {
         
 		onFilterSkills(oEvent) {
-//          oEvent = Parameter des "liveChange"-Events , welches bei jeder Eingabe "abgefeuert" wird
+//          oEvent = Parameter des "liveChange"-Events , welches bei jeder Eingabe im Suchfeld "abgefeuert" wird
             const FilterArray = [];
 			const SearchQuery = oEvent.getParameter("newValue");
 			if (SearchQuery) {
@@ -20,10 +20,12 @@ sap.ui.define([
 			BindingObject.filter(FilterArray);
 		    },
 
-            onSkillPress() {
-                const oRouter = this.getOwnerComponent().getRouter();
-                oRouter.navTo("detail");
-            }     
-
+            onSkillPress(oEvent) {
+				const CurrentItem = oEvent.getSource();
+				const ObjectRouting = this.getOwnerComponent().getRouter();
+				ObjectRouting.navTo("detail", {
+			    skillPath: window.encodeURIComponent(CurrentItem.getBindingContext("skill").getPath().substr(1))
+				});
+			}   
         });
 });

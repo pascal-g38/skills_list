@@ -12,7 +12,7 @@ sap.ui.define([
 
 		onObjectMatched(oEvent) {
 			this.getView().bindElement({
-				path: "/" + window.decodeURIComponent(oEvent.getParameter("arguments").skillPath),
+				path: + "/" + window.decodeURIComponent(oEvent.getParameter("arguments").skillPath),
 				model: "skill"
 			});
 		},

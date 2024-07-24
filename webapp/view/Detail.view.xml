@@ -3,12 +3,11 @@
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc">
 	<Page
-	    id="detail"
 		title="{i18n>detailPageTitle}"
 		showNavButton="true"
 		navButtonPress=".onBackButtonPress"
 		>
-		<ObjectHeader title="{skill>Skillname}"/>
-					  <Text text="Hello World"></Text>
+		<ObjectHeader intro="{skill>Skillarea}" 
+		              title="{skill>Skillname}"/>
 	</Page>
 </mvc:View>

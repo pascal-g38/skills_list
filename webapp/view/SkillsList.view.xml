@@ -8,9 +8,9 @@
       class="sapUiResponsiveMargin"
       width="auto"
       items="{ 
-            path : 'skill>/Skills',
+            path : 'skill>/ZM_C_Skill',
                sorter : {
-                        path : 'SkillArea',
+                        path : 'Skillarea',
                         group : true
                         } 
             }"
@@ -27,7 +27,7 @@
       </headerToolbar>   
       <items>
          <ObjectListItem
-         title="{skill>SkillName}"
+         title="{skill>Skillname}"
          type="Navigation"
          press=".onSkillPress" 
          >

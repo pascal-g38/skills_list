@@ -7,6 +7,6 @@
 		showNavButton="true"
 		navButtonPress=".onBackButtonPress"
 		>
-		<ObjectHeader title="{skill>SkillName}"/>
+		<ObjectHeader title="{skill>Skillname}"/>
 	</Page>
 </mvc:View>

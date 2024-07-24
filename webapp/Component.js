@@ -1,7 +1,8 @@
 sap.ui.define([
 	"sap/ui/core/UIComponent",
-	"sap/ui/model/json/JSONModel"
-], (UIComponent, JSONModel) => {
+	"sap/ui/model/json/JSONModel",
+	"sap/ui/model/odata/v4/ODataModel"
+], (UIComponent, JSONModel, ODataModel) => {
 	"use strict";
 
 	return UIComponent.extend("ui5.skills.Component", {

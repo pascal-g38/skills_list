@@ -14,7 +14,16 @@
 		"type": "application",
 		"applicationVersion": {
 			"version": "1.0.0"
-		}
+		},
+		"dataSources": {
+			"skillDataSource": {
+				"uri": "V4/sap/opu/odata4/sap/zmvd_ui_skill/srvd/sap/zmvd_ui_skill/0001/",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "4.0"
+				}
+			}
+		}		
 	},
 	"sap.ui": {
 		"technology": "UI5",
@@ -44,12 +53,17 @@
 				}
 			},
 			"skill": {
-				"type": "sap.ui.model.json.JSONModel",
-				"uri": "Skills.json"
+				"dataSource": "skillDataSource",
+				"preload": true,
+				"settings": {
+				  "operationMode": "Server",
+				  "autoExpandSelect": true,
+				  "earlyRequests": true
+				}
 			}
 		},
 		"rootView": {
-			"viewName": "ui5.skills.view.App",
+			"viewName": "ui5.skills.view.Overview",
 			"type": "XML",
 			"id": "app"
 		},

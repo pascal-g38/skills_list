@@ -2,7 +2,7 @@ sap.ui.define([
 	"sap/ui/core/mvc/Controller",
     "sap/ui/model/Filter",
     "sap/ui/model/FilterOperator"
-], (Controller, Filter, FilterOperator) => {
+], function(Controller, Filter, FilterOperator) {
 	"use strict";
 
 	return Controller.extend("ui5.skills.controller.SkillList", {
@@ -12,7 +12,7 @@ sap.ui.define([
             const FilterArray = [];
 			const SearchQuery = oEvent.getParameter("newValue");
 			if (SearchQuery) {
-				FilterArray.push(new Filter("SkillName", FilterOperator.Contains, SearchQuery));
+				FilterArray.push(new Filter("Skillname", FilterOperator.Contains, SearchQuery));
 			}
 
 			const ItemList = this.byId("skillList");

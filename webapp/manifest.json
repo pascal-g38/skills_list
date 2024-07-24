@@ -56,9 +56,7 @@
 				"dataSource": "skillDataSource",
 				"preload": true,
 				"settings": {
-				  "operationMode": "Server",
-				  "autoExpandSelect": true,
-				  "earlyRequests": true
+				  "operationMode": "Server"
 				}
 			}
 		},

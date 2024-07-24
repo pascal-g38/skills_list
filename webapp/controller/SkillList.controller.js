@@ -26,6 +26,6 @@ sap.ui.define([
 				ObjectRouting.navTo("detail", {
 			    skillPath: window.encodeURIComponent(CurrentItem.getBindingContext("skill").getPath().substr(1))
 				});
-			}   
+		    }   
         });
 });

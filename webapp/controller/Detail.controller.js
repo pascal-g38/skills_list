@@ -12,7 +12,7 @@ sap.ui.define([
 
 		onObjectMatched(oEvent) {
 			this.getView().bindElement({
-				path: "/" + window.decodeURIComponent(oEvent.getParameter("arguments").skillPath),
+				path: "/" + oEvent.getParameter("arguments").skillPath,
 				model: "skill"
 			});
 		},
@@ -23,7 +23,8 @@ sap.ui.define([
 
 			if (PreviousObjectsHash !== undefined) {
 				window.history.go(-1);
-			} else {
+			} 
+			else {
 				const ObjectRouting = this.getOwnerComponent().getRouter();
 				ObjectRouting.navTo("overview", {}, true);
 			}

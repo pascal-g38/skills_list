@@ -24,7 +24,7 @@ sap.ui.define([
 				const CurrentItem = oEvent.getSource();
 				const ObjectRouting = this.getOwnerComponent().getRouter();
 				ObjectRouting.navTo("detail", {
-			    skillPath: window.encodeURIComponent(CurrentItem.getBindingContext("skill").getPath().substr(1))
+			    skillPath: CurrentItem.getBindingContext("skill").getPath().substr(1)
 			  });
 		    }   
         });

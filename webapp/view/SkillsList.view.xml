@@ -15,16 +15,16 @@
                         } 
             }"
    >
-      <headerToolbar>
-         <Toolbar>
-            <Title text="{i18n>skillListTitle}"/>
-            <ToolbarSpacer/>
-            <SearchField 
-               width="50%" 
-               liveChange=".onFilterSkills"
-               showSearchButton="false"/>
-         </Toolbar>
-      </headerToolbar>   
+   <headerToolbar>
+      <Toolbar>
+         <Title text="{i18n>skillListTitle}"/>
+         <ToolbarSpacer/>
+         <SearchField 
+            width="50%" 
+            liveChange=".onFilterSkills"
+            showSearchButton="false"/>
+      </Toolbar>
+   </headerToolbar>   
       <items>
          <ObjectListItem
          title="{skill>Skillname}"

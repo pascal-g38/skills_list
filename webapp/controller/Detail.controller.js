@@ -1,6 +1,9 @@
 sap.ui.define([
 	"sap/ui/core/mvc/Controller",
-	"sap/ui/core/routing/history"
+	"sap/ui/core/routing/history",
+//	"sap/ui/richtexteditor/RichTextEditor"
+//], (Controller, History, RichTextEditor) => {
+//	"use strict";
 ], (Controller, History) => {
 	"use strict";
 
@@ -29,5 +32,5 @@ sap.ui.define([
 				ObjectRouting.navTo("overview", {}, true);
 			}
 		}
-	});
+    });
 });

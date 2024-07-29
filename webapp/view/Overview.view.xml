@@ -9,9 +9,11 @@
                     <content>
                         <Panel
                             class="sapUiResponsiveMargin"
-                            width="auto">
+                            width="auto"
+                            >
                             <content>
                                 <mvc:XMLView viewName="ui5.skills.view.SkillsList"/>
+                                <mvc:XMLView viewName="ui5.skills.view.GridList"/>
                             </content>
                         </Panel>
                     </content>

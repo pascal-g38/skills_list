@@ -1,0 +1,28 @@
+<mvc:View
+	controllerName="ui5.skills.controller.GridList"
+	xmlns="sap.m"
+	xmlns:f="sap.f"
+	xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc">
+	<f:GridList
+		id="gridListId"
+		headerText="{i18n>gridHeaderText}"
+		items="{ path : 'skill>/ZM_C_Skill' }"
+        >
+		<f:GridListItem>
+			<VBox class="sapUiResponsiveMargin"
+                  renderType="Div"
+            >
+				<Title text="{skill>Skillname}" 
+                       wrapping="true" />
+				<Label text="{skill>Skillarea}" 
+                       wrapping="true" />
+                <RatingIndicator 
+                       maxValue="10"
+                       visualMode="Half"
+                >
+                </RatingIndicator>        
+			</VBox>
+		</f:GridListItem>
+	</f:GridList>
+</mvc:View>

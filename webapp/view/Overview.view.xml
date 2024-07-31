@@ -8,8 +8,8 @@
                 <Page title="{i18n>homePageTitle}">
                     <content>
                         <Panel
-                            class="sapUiResponsiveMargin"
-                            width="auto"
+                            class="sapUiContentPadding"
+                            width="1300px"
                             >
                             <content>
                                 <mvc:XMLView viewName="ui5.skills.view.SkillsList"/>

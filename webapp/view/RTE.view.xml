@@ -8,7 +8,7 @@
     <Panel 
      class="sapUiContentPadding"
      width="auto"
-	 height="800px"
+	   height="auto"
      id="richTextEditorId"
      >
       <content>	   

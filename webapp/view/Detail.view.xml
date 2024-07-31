@@ -19,7 +19,7 @@
     <Panel 
      class="sapUiContentPadding"
      width="auto"
-	 height="800px">
+	 height="auto">
      <content>
         <mvc:XMLView viewName="ui5.skills.view.RTE"/>
      </content>

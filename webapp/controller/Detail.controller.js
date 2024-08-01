@@ -1,10 +1,8 @@
 sap.ui.define([
 	"sap/ui/core/mvc/Controller",
-	"sap/ui/core/routing/history",
-//	"sap/ui/richtexteditor/RichTextEditor"
-//], (Controller, History, RichTextEditor) => {
-//	"use strict";
-], (Controller, History) => {
+	"sap/ui/core/routing/History",
+	"sap/ui/richtexteditor/RichTextEditor"
+], (Controller, History, RichTextEditor) => {
 	"use strict";
 
 	return Controller.extend("ui5.skills.controller.Detail", {

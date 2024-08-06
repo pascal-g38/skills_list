@@ -23,7 +23,7 @@
 	 height="auto">
      <content>
         <mvc:XMLView viewName="ui5.skills.view.RTE"/>
-     </content>
+     </content>	 
     </Panel>	
    </content>    				  		  			  		  	  
   </Page>

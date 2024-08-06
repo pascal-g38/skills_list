@@ -31,7 +31,7 @@
                        visualMode="Half"
 					   iconSize="18px"
                 >
-                </RatingIndicator>        
+				</RatingIndicator>        
 			</VBox>
 		</f:GridListItem>
 	</f:GridList>
